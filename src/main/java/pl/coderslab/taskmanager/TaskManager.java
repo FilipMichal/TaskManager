@@ -74,9 +74,8 @@ public class TaskManager {
     }
 
         private static String getUserChoice() {
-//        return System.console().readLine();
-        Scanner scan = new Scanner(System.in);
 
+        Scanner scan = new Scanner(System.in);
         return scan.nextLine().trim();
     }
 
