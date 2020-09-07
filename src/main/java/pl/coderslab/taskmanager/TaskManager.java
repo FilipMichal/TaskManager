@@ -55,7 +55,6 @@ public class TaskManager {
 
     private static void loadTaskListFromFile() {
         String fileName = "tasks.csv";
-//        Path taskFilePath = Paths.get(fileName);
         File tasksFile = new File(fileName);
         int count = 0;
         try {
@@ -147,7 +146,6 @@ public class TaskManager {
         String priority = scan.nextLine();
         StringBuilder toAdd = new StringBuilder();
         toAdd.append(description).append(", ").append(dueDate).append(", ").append(priority);
-//        String newTask = toAdd.toString();
         taskList = Arrays.copyOf(taskList, taskList.length + 1);
         taskList[taskList.length - 1] = toAdd.toString().split(", ");
     }
